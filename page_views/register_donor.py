@@ -60,7 +60,7 @@ with form_col:
     with st.container(border=True):
         st.subheader("✅ Consent")
         consent = st.checkbox(
-            "I voluntarily consent to register as a donor on the LifeLink platform "
+            "I voluntarily consent to register as a donor on the JeevanLink AI platform "
             "and understand that my information will be used solely for matching with recipients. *"
         )
 
@@ -93,7 +93,7 @@ with form_col:
             donor_id = add_donor(donor)
             st.success(
                 f"🎉 **Registration successful!** Your Donor ID is `{donor_id}`.  \n"
-                "Thank you for joining the LifeLink family. You may save up to **8 lives**!"
+                "Thank you for joining the JeevanLink AI family. You may save up to **8 lives**!"
             )
             st.info(
                 "🟡 **Your registration is pending admin verification.** "

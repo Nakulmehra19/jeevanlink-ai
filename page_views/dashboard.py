@@ -1,5 +1,5 @@
 """
-LifeLink — Analytics Dashboard
+JeevanLink AI — Analytics Dashboard
 Modern redesign: mixed chart types (pie, donut, horizontal bar, bar),
 color-coded sections, compact layout, zero hardcoded data.
 
@@ -105,7 +105,7 @@ f_donors, f_requests = _filter(donors, requests)
 # ─────────────────────────────────────────────────────────────────────────────
 # HEADER
 # ─────────────────────────────────────────────────────────────────────────────
-st.title("🩸 LifeLink Dashboard")
+st.title("🩸 JeevanLink AI Dashboard")
 st.caption(
     "Real-time insights into donor-recipient connections and life-saving impact."
 )
@@ -280,7 +280,7 @@ with st.container(border=True):
 
     if lives_saved > 0:
         st.success(
-            f"🎉 LifeLink has facilitated up to **{lives_saved}** life-saving connection(s) "
+            f"🎉 JeevanLink AI has facilitated up to **{lives_saved}** life-saving connection(s) "
             f"through **{confirmed_matches}** confirmed match(es) and **{fulfilled_reqs}** fulfilled request(s)."
         )
     elif total_matches > 0:

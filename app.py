@@ -1,5 +1,5 @@
 """
-LifeLink — Donor-Recipient Matching Platform
+JeevanLink AI — Intelligent Donor–Recipient Matching Platform
 Main entry point: multi-page Streamlit app.
 """
 import streamlit as st
@@ -7,7 +7,7 @@ from data_store import init_store
 
 # ── Page config (must be first Streamlit call) ─────────────────────────────
 st.set_page_config(
-    page_title="LifeLink — Donation Matching",
+    page_title="JeevanLink AI — Donation Matching",
     page_icon="🩸",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -17,8 +17,8 @@ st.set_page_config(
 init_store()
 
 # ── Sidebar ─────────────────────────────────────────────────────────────────
-st.sidebar.title("🩸 LifeLink")
-st.sidebar.caption("Blood & Organ Donation Platform")
+st.sidebar.title("🩸 JeevanLink AI")
+st.sidebar.caption("Intelligent Donor–Recipient Matching Platform")
 st.sidebar.divider()
 
 PAGES = {

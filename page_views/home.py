@@ -8,7 +8,7 @@ col_logo, col_heading = st.columns([1, 6])
 with col_logo:
     st.markdown("# 🩸")
 with col_heading:
-    st.title("LifeLink — Donate Life, Save Lives")
+    st.title("JeevanLink AI — Intelligent Donor–Recipient Matching Platform")
     st.caption("AI-Powered Blood & Organ Donation Matching Platform for India")
 
 st.divider()
@@ -94,7 +94,7 @@ with qa3:
 with qa4:
     with st.container(border=True):
         st.markdown("### 🤖 AI Assistant")
-        st.caption("Ask LifeLink AI about blood types, organ donation, eligibility, and more.")
+        st.caption("Ask JeevanLink AI about blood types, organ donation, eligibility, and more.")
         if st.button("Ask AI →", key="qa_ai", use_container_width=True, type="primary"):
             st.session_state.current_page = "🤖 AI Assistant"
             st.session_state._nav_request = "🤖 AI Assistant"
@@ -164,4 +164,4 @@ with right_col:
         )
 
 st.divider()
-st.caption("LifeLink © 2025 · Developed by Nakul Mehra · Every donation can save up to 8 lives 💙")
+st.caption("JeevanLink AI © 2025 · Developed by Nakul Mehra · Every donation can save up to 8 lives 💙")

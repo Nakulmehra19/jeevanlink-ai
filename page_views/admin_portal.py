@@ -1,5 +1,5 @@
 """
-Admin Portal — LifeLink
+Admin Portal — JeevanLink AI
 =======================
 PROTOTYPE authentication system for academic/demonstration purposes.
 In production, replace session-state auth with a proper authentication
@@ -64,7 +64,7 @@ def _vbadge(status: str) -> str:
 # ─────────────────────────────────────────────────────────────────────────────
 
 def _show_login() -> None:
-    st.title("🔐 LifeLink Admin Portal")
+    st.title("🔐 JeevanLink AI Admin Portal")
     st.caption("Restricted access — authorised personnel only.")
     st.divider()
 
@@ -664,7 +664,7 @@ if not st.session_state.get("admin_logged_in", False):
 # ── Logged-in header ─────────────────────────────────────────────────────────
 header_col, logout_col = st.columns([5, 1])
 with header_col:
-    st.title("🛡️ LifeLink Admin Portal")
+    st.title("🛡️ JeevanLink AI Admin Portal")
     st.caption("Administrative control panel — manage donors, requests, and matches.")
 with logout_col:
     st.write("")  # spacing

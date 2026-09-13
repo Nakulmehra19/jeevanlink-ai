@@ -6,7 +6,7 @@ from google import genai
 from google.genai import types as genai_types
 
 
-SYSTEM_PROMPT = """You are LifeLink AI, a compassionate and medically informed assistant for a blood and organ donation matching platform.
+SYSTEM_PROMPT = """You are JeevanLink AI, a compassionate and medically informed assistant for a blood and organ donation matching platform.
 
 Your responsibilities:
 1. Explain blood type compatibility clearly (e.g., why O- is a universal donor, what ABO/Rh factors mean).

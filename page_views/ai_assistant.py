@@ -5,7 +5,7 @@ import streamlit as st
 from ai_engine import get_ai_client, ask_ai
 
 # ── Page header ───────────────────────────────────────────────────────────────
-st.title("🤖 LifeLink AI Assistant")
+st.title("🤖 JeevanLink AI Assistant")
 st.caption(
     "Ask anything about blood donation, organ compatibility, the matching process, "
     "eligibility criteria, or how to use this platform. Powered by **Gemini 2.5 Flash**."
@@ -55,7 +55,7 @@ if "_pending_prompt" in st.session_state:
     with st.chat_message("user"):
         st.markdown(prompt)
     with st.chat_message("assistant"):
-        with st.spinner("LifeLink AI is thinking..."):
+        with st.spinner("JeevanLink AI is thinking..."):
             try:
                 client = get_ai_client(api_key)
                 reply  = ask_ai(client, st.session_state.chat_history, prompt)
@@ -73,12 +73,12 @@ for turn in st.session_state.chat_history:
         st.markdown(turn["text"])
 
 # ── Free-form chat input ──────────────────────────────────────────────────────
-user_input = st.chat_input("Ask LifeLink AI anything about donation…")
+user_input = st.chat_input("Ask JeevanLink AI anything about donation…")
 if user_input:
     with st.chat_message("user"):
         st.markdown(user_input)
     with st.chat_message("assistant"):
-        with st.spinner("LifeLink AI is thinking..."):
+        with st.spinner("JeevanLink AI is thinking..."):
             try:
                 client = get_ai_client(api_key)
                 reply  = ask_ai(client, st.session_state.chat_history, user_input)
@@ -102,7 +102,7 @@ if st.session_state.chat_history:
 
 st.divider()
 st.caption(
-    "⚕️ LifeLink AI provides general information only. "
+    "⚕️ JeevanLink AI provides general information only. "
     "Always consult a licensed physician for medical decisions. "
     "In emergencies, call **112** or your nearest hospital immediately."
 )

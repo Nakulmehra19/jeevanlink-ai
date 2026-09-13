@@ -1,5 +1,5 @@
 """
-LifeLink — Persistent data store backed by Supabase / PostgreSQL.
+JeevanLink AI — Persistent data store backed by Supabase / PostgreSQL.
 
 Supabase is the single source of truth for all donors, requests, matches,
 and activity logs.  st.session_state holds a per-session read-cache only;

@@ -6,14 +6,14 @@ from data_store import clear_donors, clear_requests, clear_matches, reset_all
 
 # ── Page header ───────────────────────────────────────────────────────────────
 st.title("⚙️ Settings")
-st.caption("Configure your LifeLink platform preferences and API credentials.")
+st.caption("Configure your JeevanLink AI platform preferences and API credentials.")
 st.divider()
 
 # ── Section 1: Gemini API Key ─────────────────────────────────────────────────
 with st.container(border=True):
     st.subheader("🔑 Gemini API Key")
     st.markdown(
-        "LifeLink uses **Gemini 2.5 Flash** for AI match explanations and the conversational assistant. "
+        "JeevanLink AI uses **Gemini 2.5 Flash** for AI match explanations and the conversational assistant. "
         "Get your free API key from [Google AI Studio](https://aistudio.google.com/app/apikey)."
     )
 
@@ -113,12 +113,12 @@ st.divider()
 
 # ── Section 4: About ──────────────────────────────────────────────────────────
 with st.container(border=True):
-    st.subheader("ℹ️ About LifeLink")
+    st.subheader("ℹ️ About JeevanLink AI")
     col_info, col_features = st.columns(2)
 
     with col_info:
         st.info(
-            "**LifeLink — Donor-Recipient Matching Platform**\n\n"
+            "**JeevanLink AI — Intelligent Donor–Recipient Matching Platform**\n\n"
             "Version: 1.0.0  \n"
             "AI Model: Gemini 2.5 Flash (google-genai SDK)  \n"
             "Framework: Streamlit 1.62+  \n"
